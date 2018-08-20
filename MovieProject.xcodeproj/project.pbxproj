@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		74B9DC8C21269C5D00B79B15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B9DC8B21269C5D00B79B15 /* AppDelegate.m */; };
-		74B9DC8F21269C5D00B79B15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B9DC8E21269C5D00B79B15 /* ViewController.m */; };
 		74B9DC9221269C5D00B79B15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B9DC9021269C5D00B79B15 /* Main.storyboard */; };
 		74B9DC9421269C6200B79B15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B9DC9321269C6200B79B15 /* Assets.xcassets */; };
 		74B9DC9721269C6200B79B15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B9DC9521269C6200B79B15 /* LaunchScreen.storyboard */; };
 		74B9DC9A21269C6200B79B15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B9DC9921269C6200B79B15 /* main.m */; };
 		74B9DCA421269C6200B79B15 /* MovieProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B9DCA321269C6200B79B15 /* MovieProjectTests.m */; };
 		74B9DCAF21269C6200B79B15 /* MovieProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B9DCAE21269C6200B79B15 /* MovieProjectUITests.m */; };
+		74B9DD232129FC1800B79B15 /* MovieSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B9DD222129FC1800B79B15 /* MovieSearchTableViewCell.m */; };
+		74B9DD262129FC3100B79B15 /* MovieSearchLoadingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B9DD242129FC3000B79B15 /* MovieSearchLoadingTableViewCell.m */; };
+		74B9DD292129FC3E00B79B15 /* MovieSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B9DD272129FC3E00B79B15 /* MovieSearchTableViewController.m */; };
+		74B9DDB0212A88A500B79B15 /* MovieProjectAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B9DDAE212A886700B79B15 /* MovieProjectAPI.framework */; };
+		74B9DDB1212A88A500B79B15 /* MovieProjectAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74B9DDAE212A886700B79B15 /* MovieProjectAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +38,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		74B9DDB2212A88A500B79B15 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				74B9DDB1212A88A500B79B15 /* MovieProjectAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		74B9DC8721269C5D00B79B15 /* MovieProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B9DC8A21269C5D00B79B15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74B9DC8B21269C5D00B79B15 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		74B9DC8D21269C5D00B79B15 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		74B9DC8E21269C5D00B79B15 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		74B9DC9121269C5D00B79B15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74B9DC9321269C6200B79B15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74B9DC9621269C6200B79B15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +67,13 @@
 		74B9DCAA21269C6200B79B15 /* MovieProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B9DCAE21269C6200B79B15 /* MovieProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieProjectUITests.m; sourceTree = "<group>"; };
 		74B9DCB021269C6200B79B15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74B9DD212129FC1800B79B15 /* MovieSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieSearchTableViewCell.h; sourceTree = "<group>"; };
+		74B9DD222129FC1800B79B15 /* MovieSearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieSearchTableViewCell.m; sourceTree = "<group>"; };
+		74B9DD242129FC3000B79B15 /* MovieSearchLoadingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieSearchLoadingTableViewCell.m; sourceTree = "<group>"; };
+		74B9DD252129FC3000B79B15 /* MovieSearchLoadingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieSearchLoadingTableViewCell.h; sourceTree = "<group>"; };
+		74B9DD272129FC3E00B79B15 /* MovieSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieSearchTableViewController.m; sourceTree = "<group>"; };
+		74B9DD282129FC3E00B79B15 /* MovieSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieSearchTableViewController.h; sourceTree = "<group>"; };
+		74B9DDAE212A886700B79B15 /* MovieProjectAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MovieProjectAPI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B9DDB0212A88A500B79B15 /* MovieProjectAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +105,7 @@
 		74B9DC7E21269C5D00B79B15 = {
 			isa = PBXGroup;
 			children = (
+				74B9DDAE212A886700B79B15 /* MovieProjectAPI.framework */,
 				74B9DC8921269C5D00B79B15 /* MovieProject */,
 				74B9DCA221269C6200B79B15 /* MovieProjectTests */,
 				74B9DCAD21269C6200B79B15 /* MovieProjectUITests */,
@@ -101,10 +126,11 @@
 		74B9DC8921269C5D00B79B15 /* MovieProject */ = {
 			isa = PBXGroup;
 			children = (
+				74B9DD1E2129FB6F00B79B15 /* MoviesSearchVC */,
+				74B9DD282129FC3E00B79B15 /* MovieSearchTableViewController.h */,
+				74B9DD272129FC3E00B79B15 /* MovieSearchTableViewController.m */,
 				74B9DC8A21269C5D00B79B15 /* AppDelegate.h */,
 				74B9DC8B21269C5D00B79B15 /* AppDelegate.m */,
-				74B9DC8D21269C5D00B79B15 /* ViewController.h */,
-				74B9DC8E21269C5D00B79B15 /* ViewController.m */,
 				74B9DC9021269C5D00B79B15 /* Main.storyboard */,
 				74B9DC9321269C6200B79B15 /* Assets.xcassets */,
 				74B9DC9521269C6200B79B15 /* LaunchScreen.storyboard */,
@@ -132,6 +158,33 @@
 			path = MovieProjectUITests;
 			sourceTree = "<group>";
 		};
+		74B9DD1E2129FB6F00B79B15 /* MoviesSearchVC */ = {
+			isa = PBXGroup;
+			children = (
+				74B9DD202129FBE200B79B15 /* MovieSearchLoadingCell */,
+				74B9DD1F2129FB9900B79B15 /* MoviewSearchCell */,
+			);
+			path = MoviesSearchVC;
+			sourceTree = "<group>";
+		};
+		74B9DD1F2129FB9900B79B15 /* MoviewSearchCell */ = {
+			isa = PBXGroup;
+			children = (
+				74B9DD212129FC1800B79B15 /* MovieSearchTableViewCell.h */,
+				74B9DD222129FC1800B79B15 /* MovieSearchTableViewCell.m */,
+			);
+			path = MoviewSearchCell;
+			sourceTree = "<group>";
+		};
+		74B9DD202129FBE200B79B15 /* MovieSearchLoadingCell */ = {
+			isa = PBXGroup;
+			children = (
+				74B9DD252129FC3000B79B15 /* MovieSearchLoadingTableViewCell.h */,
+				74B9DD242129FC3000B79B15 /* MovieSearchLoadingTableViewCell.m */,
+			);
+			path = MovieSearchLoadingCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,6 +195,7 @@
 				74B9DC8321269C5D00B79B15 /* Sources */,
 				74B9DC8421269C5D00B79B15 /* Frameworks */,
 				74B9DC8521269C5D00B79B15 /* Resources */,
+				74B9DDB2212A88A500B79B15 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,8 +316,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B9DC8F21269C5D00B79B15 /* ViewController.m in Sources */,
+				74B9DD262129FC3100B79B15 /* MovieSearchLoadingTableViewCell.m in Sources */,
 				74B9DC9A21269C6200B79B15 /* main.m in Sources */,
+				74B9DD232129FC1800B79B15 /* MovieSearchTableViewCell.m in Sources */,
+				74B9DD292129FC3E00B79B15 /* MovieSearchTableViewController.m in Sources */,
 				74B9DC8C21269C5D00B79B15 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +490,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MovieProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +510,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MovieProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

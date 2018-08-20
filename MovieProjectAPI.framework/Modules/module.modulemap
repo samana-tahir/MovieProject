@@ -1,0 +1,6 @@
+framework module MovieProjectAPI {
+  umbrella header "MovieProjectAPI.h"
+
+  export *
+  module * { export * }
+}
